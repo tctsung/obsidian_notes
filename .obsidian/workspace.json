@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "57e77a32b13220ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "d73e6d26d2887ae3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6e1b7b6168a974c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM/tools/Langraph/main.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "main"
+            }
+          },
+          {
+            "id": "741a91f326ade8c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM/tools/Langraph/main.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "main"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fce1172adbe3cc2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "69df936344bcd49e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99b27526442e6ac7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8c192f44053fcb27",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "772af17d9d92bcd2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bbc155bf1d4d12de",
+    "type": "split",
+    "children": [
+      {
+        "id": "b776e5858750d3f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3aa3450186f0280e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "LLM/tools/Langraph/Basics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Basics"
+            }
+          },
+          {
+            "id": "baaf561f029d753b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "LLM/tools/Langraph/Basics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Basics"
+            }
+          },
+          {
+            "id": "7f2e38d986ed2b83",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8362768c3be35dcb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LLM/tools/Langraph/Basics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Basics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "741a91f326ade8c7",
+  "lastOpenFiles": [
+    "LLM/tools/Langraph/Basics.md",
+    "Welcome.md",
+    "LLM/tools/Langraph/main.md",
+    "Templates/Coding note.md",
+    "2025-08-04.md",
+    "LLM/tools/Langraph/basics.md",
+    "LLM/tools/Langraph/agent.md",
+    "LLM/tools/Langraph/LangGraph Main Page.md",
+    "Templates/Main page.md",
+    "Templates",
+    "LLM/tools/Langraph",
+    "create a link.md",
+    "LLM/tools/Untitled",
+    "LLM/tools",
+    "LLM",
+    "2025-08-03.md"
+  ]
+}

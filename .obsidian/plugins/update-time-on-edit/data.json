@@ -1,0 +1,14 @@
+{
+  "dateFormat": "yyyy-MM-dd'T'HH:mm",
+  "enableCreateTime": true,
+  "headerUpdated": "updated",
+  "headerCreated": "created",
+  "minMinutesBetweenSaves": 1,
+  "ignoreGlobalFolder": [],
+  "ignoreCreatedFolder": [],
+  "enableExperimentalHash": false,
+  "fileHashMap": {
+    "Templates/Coding note.md": "57101a6ca8fdcee810224413dff6d6e26da9e4cb9ea7a29497b8c10fce960556",
+    "LLM/tools/Langraph/Basics.md": "17c542dfcc74a2e2414bf868dc8aa5b2e1474456669d80b3f27e27445fda370d"
+  }
+}
