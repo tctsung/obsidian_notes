@@ -1,8 +1,8 @@
 ---
 created: 2025-08-03T13:10
-updated: 2025-08-10T23:24
+updated: 2025-09-01T12:45
 tags: []
-description: 
+description:
 ---
 
 
@@ -29,7 +29,7 @@ output = llm.invoke([
 from langchain_core.messages import ToolMessage
 ```
 ## Tool Calling
-* See [[Tools]] 
+* See [[Tools & ReACT]] 
 * create a tool calling node
 
 ```python

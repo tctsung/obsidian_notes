@@ -1,6 +1,6 @@
 ---
 created: 2025-08-03T13:10
-updated: 2025-08-10T16:21
+updated: 2025-09-01T20:13
 tags:
   - code
   - LangGraph
@@ -157,16 +157,16 @@ graph.invoke({"graph_state" : "Hi, this is Lance."})
 ```python
 from typing import Annotated
 from langchain_core.messages import AnyMessage
-from langgraph.graph.message import **add_messages**
+from langgraph.graph.message import add_messages
 
 # hand-write:
 class MessagesState(TypedDict):
-    **messages**: Annotated[list[AnyMessage], add_messages]
+    messages: Annotated[list[AnyMessage], add_messages]
     
 # LangGraph have built-in to append list:
-**from langgraph.graph import MessagesState**  # default has **messages** that append msg
-**class MessagesState(MessagesState):
-    pass**
+from langgraph.graph import MessagesState  # default has messages that append msg
+class MyMessagesState(MessagesState):
+    new_args: 
     
 # Nodes & edges
 def llm_msg(state: **MessagesState**):
@@ -174,7 +174,7 @@ def llm_msg(state: **MessagesState**):
 ```
 
 - Self-written replacement
-    - MessagesState has an issue: only work with LangChain models
+    - MessagesState has an issue: is langchain message dtype
 
 ```python
 from typing import Annotated
@@ -185,7 +185,7 @@ def append(prev: list, msg):
         msg = list(msg)
     output = prev + msg
     return output
-class **MsgState**(TypedDict):
+class MsgState(TypedDict):
     messages: Annotated[list[dict], append]
 
 def llm_msg(state: MsgState):
@@ -205,8 +205,6 @@ def end_or_continue(state: MsgState):
         return END
     else:
         return "llm_msg"
-# Build graph
-
 ```
 
 ### Graph
