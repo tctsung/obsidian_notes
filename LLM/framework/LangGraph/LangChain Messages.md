@@ -1,8 +1,8 @@
 ---
 created: 2025-08-03T13:10
-updated: 2025-09-01T12:45
+updated: 2025-09-28T22:29
 tags: []
-description:
+description: 
 ---
 
 
@@ -24,12 +24,9 @@ output = llm.invoke([
 				SystemMessage("You are a angry chatbot"), 
 				HumanMessage(content="What's good") 
 			])
-
-
-from langchain_core.messages import ToolMessage
 ```
 ## Tool Calling
-* See [[Tools & ReACT]] 
+* See [[Tools]] 
 * create a tool calling node
 
 ```python

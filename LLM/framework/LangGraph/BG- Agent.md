@@ -1,6 +1,6 @@
 ---
 created: 2025-08-03T22:05
-updated: 2025-08-03T22:06
+updated: 2025-09-28T21:15
 ---
 # Intro
 
@@ -12,11 +12,11 @@ updated: 2025-08-03T22:06
 - **Agents** is more flexible, can pick their own workflow
     - LLM-defined control flow
 
-![Chain](assets/image.png)
+![Chain](image.png)
 
 Chain
 
-![Agent](assets/image%201.png)
+![Agent](image%201.png)
 
 Agent
 
@@ -27,11 +27,11 @@ Agent
     - choose step from a bunch of options
     - generate steps by itself
 
-![image.png](assets/image%202.png)  ![image.png](assets/image%203.png)
+![image.png](image%202.png)  ![image.png](image%203.png)
 
 - In practice, more agent’s lvl of control → **reliability** decrease
     - tooo flexible
     - This is why LangGraph aims to improve:
         - **balance reliability with LLM control**
     
-    ![image.png](assets/image%204.png)
+    ![image.png](image%204.png)

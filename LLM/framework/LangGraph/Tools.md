@@ -1,22 +1,16 @@
 ---
 created: 2025-08-03T15:08
-updated: 2025-09-01T23:34
+updated: 2025-09-28T21:15
 tags:
   - tavily
   - code
-description:
+description: 
 ---
 
 ## Tool Calling
 * def: Let LLM able to use external tools/API outside of 文字接龍
 	* key for ReACT: tool calling & reasoning loop
 	* each tool calls cost an API call/LLM inference
-* basic ReACT:
-	1. give LLM instruction of how to use the tool & what can the tool do
-	2. LLM take user input & if decide to use tool 
-		$\rightarrow$ return structured output of tool name & input arguments
-	3. executes tool, returns result back to LLM
-	4. LLM continues reasoning with new info
 ### Tavily (Websearch tool)
 * API call: do websearch & return webpage summaries of top k results with Relevance Scoring
 	* might use some NLP models in backend for summary/re-ranking

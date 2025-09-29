@@ -1,6 +1,6 @@
 ---
 created: 2025-08-03T13:10
-updated: 2025-09-01T20:13
+updated: 2025-09-28T21:15
 tags:
   - code
   - LangGraph
@@ -137,7 +137,7 @@ from IPython.display import Image
 display(Image(graph.get_graph().draw_mermaid_png()))
 ```
 
-![image.png](assets/image%205.png)
+![image.png](image%205.png)
 
 ### Invoke / initialize the graph
 
@@ -225,4 +225,4 @@ graph = builder.compile()
 graph.invoke({"messages": []})
 ```
 
-![image.png](assets/image%206.png)
+![image.png](image%206.png)
