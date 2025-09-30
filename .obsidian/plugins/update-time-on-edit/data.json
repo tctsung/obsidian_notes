@@ -13,12 +13,20 @@
     "LLM/knowledge/prompt/ReAct.md": "645e6b871a3964bcbe6fe8274c65b9c9281c1a65403e8244f4b8f575686ac30e",
     "CLI/screen.md": "9ff07096107a5e989fbcba8b3390b0ce3d5f6d51f036abb4274ab549cbb3d86a",
     "CLI/Memory usage.md": "fc74c3ae4c992f49a2d2b51a22be7b60f8d721bf2836b8553b65973222be9b99",
-    "LLM/framework/LangGraph/Basics- Node, State, Edge.md": "2357cbd65aab0128b53954f6a350c61f1b2c3983406b76ffc1fab8c411c94402",
     "LLM/framework/LangGraph/LangChain Messages.md": "2cf9850bdf86f8641c6bc2ce5ed607cd438797dac55740c795683268aa5a5b92",
     "LLM/framework/LangGraph/main.md": "dac468e4599654be7c6d1316782279d21766bb14a9cc2f403f11b6f97f5f546f",
     "LLM/framework/LangGraph/BG- Agent.md": "c6c3a58f1a19b5ef4bfe5984a5b62f71c14556ccd2cdfc378f9df9192a877249",
     "LLM/framework/LangGraph/Tools.md": "6b853c08cb986a29620937db97758df31c5fd755166c5f9c97ecacc74ce692b2",
     "LLM/framework/LangGraph/ReACT.md": "dde8355a3daf6d55d8baad13e48f468be81dacd43804ebffe36cd9676a780a7e",
-    "README.md": "f81c15659ac79b4da008c378631addd6b97deaaa812f9e9055fa243b220700da"
+    "Home.md": "40924a0e9f75138473a1cedc07b454080f9ef3c0f7245edc63120eda4679692e",
+    "LLM/LLM.md": "4996c62ead1e2032207537ce0c1cd790038529707a1b551fe914b16a62d95c62",
+    "LLM/framework/framework.md": "5aba5e2e088596188ab916fd8fb02619cba6533ff59a41d4d8bf1b196cbc74e1",
+    "LLM/knowledge/knowledge.md": "a57f5e7bc680332ba5f62aa03a19ab7958656195a7a07951106081c1714b17a7",
+    "Program/Program.md": "fadec3b6ef12a93e2b77e10294fc1ff726362a75270e5286d76c7804da0704ec",
+    "LLM/framework/LangGraph/Node State & Edge.md": "2357cbd65aab0128b53954f6a350c61f1b2c3983406b76ffc1fab8c411c94402",
+    "LLM/framework/LangGraph/LangGraph.md": "aeab4d0bfb405916a7cd8f45c463f8c61d23a337bd7d95205d89947ca4fac571",
+    "Templates/Templates.md": "b8240b4236e366842d82198dfe3c75f4408713d6fa804180aeeccf76b7bee447",
+    "GEMINI.md": "e69d1d003de8de52885af13e7569d3c85d39a328bd234db6b52b8afe636b9a2e",
+    "LLM/knowledge/prompt/prompt.md": "fa0e8d67e1bd644c46c2a16c946251db2c5d67d1b317bac5f6098c0d172f0991"
   }
 }

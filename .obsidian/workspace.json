@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dc3761d4d50e4722",
+        "id": "d7d6942429c3f7f4",
         "type": "tabs",
         "children": [
           {
-            "id": "d50adf5a2424505b",
+            "id": "abfd4b5ca316e935",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLM/framework/LangGraph/Tools.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tools"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -160,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -169,48 +166,50 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d50adf5a2424505b",
+  "active": "abfd4b5ca316e935",
   "lastOpenFiles": [
+    "LLM/knowledge/tokenization/tokenization.md",
+    "LLM/knowledge/tokenization/BG.md",
+    "LLM/knowledge/prompt/prompt.md",
+    "LLM/knowledge/knowledge.md",
+    "GEMINI.md",
+    "LLM/framework/LangGraph/BG- Agent.md",
+    "LLM/LLM.md",
+    "Home.md",
+    "Untitled.canvas",
+    "Templates/Coding note.md",
+    "Templates/Templates.md",
+    "Templates/Main page.md",
+    "LLM/framework/LangGraph/Node State & Edge.md",
+    "CLI/README.md",
+    "Program/Program.md",
+    "Program/python/python.md",
+    "CLI/CLI.md",
+    "LLM/framework/framework.md",
+    "LLM/framework/LangGraph/LangGraph.md",
+    "download-ripgrepYl1a58/tmp-file",
+    "download-ripgrepYl1a58",
+    "LLM/knowledge/prompt/ReAct.md",
+    "LLM/framework/LangGraph/Tools.md",
     "LLM/framework/LangGraph/ReACT.md",
     "LLM/framework/LangGraph/LangChain Messages.md",
     "CLI/screen.md",
-    "LLM/knowledge/prompt/ReAct.md",
     "README.md",
     "LLM/framework/LangGraph/main.md",
-    "LLM/framework/LangGraph/Tools.md",
     "Program/python/Untitled.md",
     "Program/python",
-    "CLI/Git.md",
     "Program",
-    "CLI/Memory usage.md",
     "CLI",
-    "LLM/framework/LangGraph/BG- Agent.md",
     "LLM/framework/LangGraph/assets/Pasted image 20250901233334.png",
     "LLM/framework/LangGraph/assets/Pasted image 20250901233029.png",
     "LLM/framework/LangGraph/assets/Pasted image 20250901232319.png",
-    "LLM/framework/LangGraph/Basics- Node, State, Edge.md",
     "LLM/knowledge/prompt",
     "LLM/knowledge/tokenization/assets/Untitled.png",
-    "LLM/knowledge/tokenization/BG.md",
     "LLM/knowledge/tokenization/assets",
     "assets",
     "LLM/knowledge/tokenization",
     "LLM/knowledge",
     "LLM/framework/LangGraph/assets/Pasted image 20250810160757.png",
-    "LLM/knowledge",
-    "Templates/Main page.md",
-    "LLM/framework/LangGraph",
-    "LLM/tools/Langraph/Tools.md",
-    "LLM/tools/Langraph/Basics.md",
-    "Templates/Coding note.md",
-    "LLM/tools/Langraph/main.md",
-    "Pasted image 20250803150226.png",
-    "Welcome.md",
-    "2025-08-04.md",
-    "LLM/tools/Langraph/basics.md",
-    "LLM/tools/Langraph/agent.md",
-    "LLM/tools/Langraph/LangGraph Main Page.md",
-    "create a link.md",
-    "2025-08-03.md"
+    "Pasted image 20250803150226.png"
   ]
 }

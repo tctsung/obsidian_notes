@@ -8,7 +8,7 @@ updated: 2025-09-28T23:33
 - A prompt framework to let LLM:
 	- able to use **external resources** (the <span style="color:rgb(255, 0, 0)">tools</span>)
 	- iteratively do **complex reasoning**
-- detailed knowledge note: [[LLM/knowledge/prompt/ReAct|ReAct]]
+- detailed knowledge note: [[../../knowledge/prompt/ReAct_Prompting_Concept|ReAct Concept]]
 
 
 ## Code
