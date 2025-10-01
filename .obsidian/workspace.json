@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/framework/framework.md",
+                "file": "LLM/framework/Llama-Factory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "framework"
+              "title": "Llama-Factory"
             }
           }
         ],
@@ -187,8 +187,8 @@
   },
   "active": "c384b35c41c8b82f",
   "lastOpenFiles": [
-    "LLM/framework/Llama-Factory.md",
     "LLM/framework/framework.md",
+    "LLM/framework/Llama-Factory.md",
     "LLM/LLM.md",
     "LLM/knowledge/knowledge.md",
     "CLI/screen.md",
