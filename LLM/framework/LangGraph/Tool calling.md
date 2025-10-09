@@ -1,16 +1,85 @@
 ---
 created: 2025-08-03T15:08
-updated: 2025-09-28T21:15
+updated: 2025-10-08T23:26
 tags:
   - tavily
   - code
-description: 
+description:
 ---
 
-## Tool Calling
+## Introduction
 * def: Let LLM able to use external tools/API outside of 文字接龍
 	* key for ReACT: tool calling & reasoning loop
 	* each tool calls cost an API call/LLM inference
+## Mental Model
+*** note: I use XML tags for demo, but usually it's json format
+1. In LLM context window, provide a list of tool & instruction on how to output structured tool calls (json-like format)
+	- code:
+	```python
+	llm = init_chat_model("google_genai:gemini-2.5-flash")
+	llm_with_tools = llm.bind_tools(tools)
+	```
+	- behind the hood: simply adding tool call instruction into system prompt
+```
+<|system|>
+You are a helpful assistant.
+------prompt added from bind_tools--------------------
+TOOLS:
+1. TavilySearch(query: str) -> int
+   Description: Do websearch with Tavily
+   Parameters: query for websearch
+2. add_numbers(a: int, b: int) -> int
+   Description: Adds two numbers.
+   Parameters: a (First number), b (Second number)
+When needed, output ONLY a xml with tags <tool_call>
+<tool_call> 
+	<name>add_numbers</name>
+	<args>{"a": 5, "b": 3}</args>
+</tool_call> 
+------end of prompt added from bind_tools-------------
+```
+
+2. user input $\rightarrow$ if LLM think needs a tool, will return structured output calls
+	- mock code:
+	```python
+	conversation_history = []
+	user_input = HumanMessage(content="Add 5 and 3")
+	conversation_history.append(user_input)
+	llm_output = llm_with_tools.invoke(messages)
+	
+	# Inspect if LLM output has tool_call XML tag:
+	if "<tool_call>" in llm_output:
+		# parse it to handy data str (eg. dict)
+		tool_call_info = parse_tool_call_tag(llm_output)
+		# > {"name": "add_numbers", "args": {"a": 5, "b": 3}, "id": "uuid"}
+	```
+	- LangGraph automation
+		- append a `AIMessage` with tool call info into state `messages`
+```python
+conversation_history.append(AIMessage(tool_call_info))
+```
+3. Use the parsed tool name & input arg to run associated function
+	- mock code
+	```python
+	available_tools = {"add_numbers": add_numbers, "TavilySearch": TavilySearch}
+	if tool_call_info.get("name") in available_tools:
+		tool_func = available_tools[tool_call_info.get("name")]
+		tool_output = tool_func(**tool_call_info.get("args"))
+	```
+	- LangGraph automation
+		- wrap tool output into `ToolMessage` & appended to conversation history
+```python
+conversation_history.append(
+	ToolMessage(
+		content=tool_output, 
+		tool_call_id=tool_call_info.get("id")
+		)
+	)
+```
+#### Example
+/!!!!!!!! add a screenshot of LangGraph stream/
+
+
 ### Tavily (Websearch tool)
 * API call: do websearch & return webpage summaries of top k results with Relevance Scoring
 	* might use some NLP models in backend for summary/re-ranking
@@ -69,6 +138,8 @@ llm_with_tools = llm.bind_tools(tools)
 ```
 ### Build Graph
  * **`ToolNode`**: turn a list of python function (the tools) into a node available for LLM
+	 * automatically return the `{"messages": "msg to toolcalling LLM"}`
+	 * 
  *  **`tools_condition`**: conditional edge that checks **did the LLM try to call a tool**
 	* if YES: route to tool node (must name the tool node <span style="color:rgb(255, 0, 0)">"tools"</span>)
 	* if NO: route to END (finish the ReACT loop)

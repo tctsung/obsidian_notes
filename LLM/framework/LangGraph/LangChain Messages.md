@@ -1,8 +1,8 @@
 ---
 created: 2025-08-03T13:10
-updated: 2025-09-28T22:29
+updated: 2025-10-08T22:46
 tags: []
-description: 
+description:
 ---
 
 
@@ -26,7 +26,7 @@ output = llm.invoke([
 			])
 ```
 ## Tool Calling
-* See [[Tools]] 
+* See [[Tool calling]] 
 * create a tool calling node
 
 ```python
