@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/framework/LangGraph/LangChain Messages.md",
+                "file": "Database/Neo4j-Cypher.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LangChain Messages"
+              "title": "Neo4j-Cypher"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "d82aa5d0d0ec5406",
   "lastOpenFiles": [
+    "LLM/framework/LangGraph/LangChain Messages.md",
     "LLM/framework/LangGraph/Tool calling.md",
     "LLM/framework/LangGraph/Untitled.base",
     "LLM/framework/LangGraph/Untitled 1.base",
@@ -200,7 +201,6 @@
     "download-ripgrepYl1a58",
     "LLM/knowledge/prompt/ReAct.md",
     "LLM/framework/LangGraph/ReACT.md",
-    "LLM/framework/LangGraph/LangChain Messages.md",
     "README.md",
     "Program/python",
     "Program",
