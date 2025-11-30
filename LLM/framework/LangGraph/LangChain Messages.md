@@ -1,11 +1,9 @@
 ---
 created: 2025-08-03T13:10
-updated: 2025-10-08T22:46
+updated: 2025-11-29T17:21
 tags: []
 description:
 ---
-
-
 ## Intro
 * def: wrapper to specify msg type in organized way & have extra metadata
 
