@@ -25,6 +25,7 @@
     "projects/Lyric Chat.md": "1dfbc45da18561f7b4c5b5a1807c8efacdc9d6693ab955c45a9d5f714f28b796",
     "LLM/framework/LangGraph/ReAct Agent.md": "078b0d483421e6ffa2503f4e5398c4809882999d3f12f72d9b35124efb5608db",
     "LLM/knowledge/tokenization/Tokenization knowledge.md": "f8bee959524f7d78217fa033e6d93ac56f5e8558eed157c2ea96f72545281c04",
-    "README.md": "b70ab0d36c7879c43ce9fcbfbd9040b5beab5c11e2c59cb43457b1bff26c354e"
+    "README.md": "b70ab0d36c7879c43ce9fcbfbd9040b5beab5c11e2c59cb43457b1bff26c354e",
+    "projects/Finetune customized model.md": "3c58098ba534f23596815b95fa07c8a78e97640a88bb503e08ecdc4e02b15290"
   }
 }
