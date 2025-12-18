@@ -1,6 +1,6 @@
 ---
 created: 2025-12-03T21:01
-updated: 2025-12-03T22:08
+updated: 2025-12-10T12:32
 ---
 
 Use Colab/RTX2070 + llama-factory to train a < 7B model / RAG a API
@@ -35,8 +35,9 @@ Midterm goal:
 - streamlit UI for agent (song rec)
 
 ### Papers
-
-- - [ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT](https://arxiv.org/pdf/2310.16944)
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/pdf/2106.09685)
+- [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155)
+- [ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT](https://arxiv.org/pdf/2310.16944)
 	- learn the golden standard (SFT -> DPO)
 - [RoleLLM: Benchmarking, Eliciting, and Enhancing Role-Playing Abilities of Large Language Models](https://arxiv.org/pdf/2310.00746)
 	- learn a special case of SFT for persona
