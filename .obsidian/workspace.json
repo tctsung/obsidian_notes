@@ -4,53 +4,74 @@
     "type": "split",
     "children": [
       {
-        "id": "df0b574b8316e88d",
+        "id": "44e03c1580ef54b3",
         "type": "tabs",
+        "dimension": 76.86567164179104,
         "children": [
           {
-            "id": "d82aa5d0d0ec5406",
+            "id": "a1f9f1620903cd91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Lyric Chat.md",
+                "file": "Templates/Note taking guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lyric Chat"
+              "title": "Note taking guide"
             }
           },
           {
-            "id": "32ad0cec16111c9b",
+            "id": "9de16ea38432f4cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "LLM/framework/Llama-Factory.md",
-                "mode": "source",
-                "source": false
+                "file": "LLM/knowledge/tokenization/assets/Untitled.png"
               },
-              "icon": "lucide-file",
-              "title": "Llama-Factory"
+              "icon": "lucide-image",
+              "title": "Untitled"
             }
           },
           {
-            "id": "6ed6c30e0192891e",
+            "id": "664f0628a0b9b9b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/framework/LangGraph/Tool calling.md",
+                "file": "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tool calling"
+              "title": "Modern tokenizer (BPE & wordpiece)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
+      },
+      {
+        "id": "ac0162825f3d28f5",
+        "type": "tabs",
+        "dimension": 23.134328358208954,
+        "children": [
+          {
+            "id": "d8f4d718639b8495",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Modern tokenizer (BPE & wordpiece) 的大綱"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +94,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "檔案瀏覽器"
             }
           },
           {
@@ -90,7 +111,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜尋"
             }
           },
           {
@@ -189,24 +210,40 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false,
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "32ad0cec16111c9b",
+  "active": "d8f4d718639b8495",
   "lastOpenFiles": [
-    "projects/Own Agent Framework.md",
+    "Course/CS336_LLM_from_scratch/1_Overview_and_tokenization.md",
+    "LLM/knowledge/tokenization/assets/Untitled.png",
+    "Templates/Note taking guide.md",
+    "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md",
+    "LLM/knowledge/tokenization/assets/mermaid-diagram.png",
+    "LLM/knowledge/tokenization/Tokenization intuition & common types.md",
+    "Templates/().md",
+    "tokenization.md",
+    "Course/CS336_LLM_from_scratch/README.md.md",
+    "Course/CS336_LLM_from_scratch/assets/Pasted image 20260307082520.png",
+    "Course/CS336_LLM_from_scratch/assets",
+    "Course/CS336_LLM_from_scratch/未命名.base",
+    "Course/CS336_LLM_from_scratch/未命名 1.base",
     "LLM/framework/LangGraph/Tool calling.md",
+    "LLM/framework/LangGraph/未命名.md",
+    "Course/CS336_LLM_from_scratch",
+    "Course",
+    "LLM/framework/Llama-Factory.md",
+    "projects/Own Agent Framework.md",
     "LLM/framework/LangGraph/LangChain Messages.md",
     "projects/Finetune customized model.md",
     "projects/Lyric Chat.md",
-    "Templates/Templates.md",
     "Templates/Coding note.md",
     "GEMINI.md",
     "README.md",
@@ -217,31 +254,16 @@
     "LLM/knowledge/knowledge.md",
     "prompt",
     "LLM/knowledge/Agent.md",
-    "LLM/knowledge/tokenization/Tokenization knowledge.md",
     "LLM/knowledge/tokenization/tokenization.md",
     "LLM/knowledge/prompt/ReAct Knowledge.md",
-    "LLM/framework/LangGraph/Node State & Edge.md",
-    "LLM/knowledge/prompt/prompt.md",
-    "LLM/framework/Llama-Factory.md",
-    "LLM/framework/framework.md",
-    "LLM/framework/LangGraph/LangGraph.md",
-    "LLM/framework/LangGraph/ReAct Agent.md",
-    "Database/Neo4j-Cypher.md",
-    "CLI/Git.md",
     "projects",
     "LLM/framework/LangGraph/Untitled.base",
     "LLM/framework/LangGraph/Untitled 1.base",
     "Untitled.canvas",
     "download-ripgrepYl1a58/tmp-file",
-    "download-ripgrepYl1a58",
-    "Programming/python",
-    "Programming",
-    "CLI",
     "LLM/framework/LangGraph/assets/Pasted image 20250901233334.png",
     "LLM/framework/LangGraph/assets/Pasted image 20250901233029.png",
     "LLM/framework/LangGraph/assets/Pasted image 20250901232319.png",
-    "LLM/knowledge/prompt",
-    "LLM/knowledge/tokenization/assets/Untitled.png",
     "LLM/framework/LangGraph/assets/Pasted image 20250810160757.png",
     "Pasted image 20250803150226.png"
   ]

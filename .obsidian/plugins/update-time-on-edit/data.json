@@ -17,16 +17,19 @@
     "LLM/framework/LangGraph/BG- Agent.md": "c6c3a58f1a19b5ef4bfe5984a5b62f71c14556ccd2cdfc378f9df9192a877249",
     "LLM/framework/LangGraph/ReACT.md": "dde8355a3daf6d55d8baad13e48f468be81dacd43804ebffe36cd9676a780a7e",
     "LLM/framework/LangGraph/Node State & Edge.md": "2357cbd65aab0128b53954f6a350c61f1b2c3983406b76ffc1fab8c411c94402",
-    "Templates/Templates.md": "b8240b4236e366842d82198dfe3c75f4408713d6fa804180aeeccf76b7bee447",
     "GEMINI.md": "e69d1d003de8de52885af13e7569d3c85d39a328bd234db6b52b8afe636b9a2e",
-    "LLM/framework/Llama-Factory.md": "36c5cf6760029e918a5188a9215aa82ac257501584e9f8c864a7db0c51a7ffca",
-    "LLM/framework/LangGraph/Tool calling.md": "daf89be29a7e02d62567cef60d490e0848a0739c248f1cb64c09b41dd4996113",
+    "LLM/framework/Llama-Factory.md": "36d1598c4788f1b2d2f77ab457cc1e0cd835a23493399802a34e9e8b780e3820",
+    "LLM/framework/LangGraph/Tool calling.md": "e7baea56fe679a7ada8afac1c3fe5fe4def7a97f8c68068bbd5ea18fc21c71e4",
     "Database/Neo4j-Cypher.md": "a744b568c984afd35e861bf1f82c0f33e123a8e02a3f94478850efd83b8754cd",
-    "projects/Lyric Chat.md": "1dfbc45da18561f7b4c5b5a1807c8efacdc9d6693ab955c45a9d5f714f28b796",
+    "projects/Lyric Chat.md": "f3121c3a48a0df8d33fbd0a4f8beb5320b82b8468c76f55a56cfbd3b19b30e94",
     "LLM/framework/LangGraph/ReAct Agent.md": "078b0d483421e6ffa2503f4e5398c4809882999d3f12f72d9b35124efb5608db",
-    "LLM/knowledge/tokenization/Tokenization knowledge.md": "f8bee959524f7d78217fa033e6d93ac56f5e8558eed157c2ea96f72545281c04",
-    "README.md": "b70ab0d36c7879c43ce9fcbfbd9040b5beab5c11e2c59cb43457b1bff26c354e",
+    "README.md": "fe5d8a4b4deb8d3f524c8822183bfd8195ddb3372f6a7695f3b545ecfe11106c",
     "projects/Finetune customized model.md": "4c1021030cfdf95e7e99e30e95f3bb812ae4bac4add3f8e7566b8dafb4fc3342",
-    "projects/Own Agent Framework.md": "1a328a82a4a782726011a52d3aee0746761716e286b5f1c819e8bd06e4920dc1"
+    "projects/Own Agent Framework.md": "1a328a82a4a782726011a52d3aee0746761716e286b5f1c819e8bd06e4920dc1",
+    "Course/CS336_LLM_from_scratch/README.md.md": "baeafa9823424c829c1af25f3516360019e0aa6da46aeb71df4103fdbfee5c7a",
+    "Course/CS336_LLM_from_scratch/1_Overview_and_tokenization.md": "28862f38003dc236c2716ff541b78a3dd20473406d921e95a4fe3878417ba47c",
+    "LLM/knowledge/tokenization/Tokenization intuition & common types.md": "5351cada01dd8bbc8eeed83b04f1ab44ddfac04c72c2ccb1c012337a6d4525c8",
+    "Templates/Note taking guide.md": "51d844154c886734757f89f5f24e68c0cc3697c182d46aa355228837ca9222c4",
+    "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md": "847e1e0a7eb817787d57f66779ac19670c5ba756e11c30de13683becb6d2b047"
   }
 }
