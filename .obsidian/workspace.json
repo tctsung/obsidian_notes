@@ -14,24 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Note taking guide.md",
+                "file": "LLM/knowledge/tokenization/Tokenization intuition & common types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note taking guide"
-            }
-          },
-          {
-            "id": "9de16ea38432f4cf",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "LLM/knowledge/tokenization/assets/Untitled.png"
-              },
-              "icon": "lucide-image",
-              "title": "Untitled"
+              "title": "Tokenization intuition & common types"
             }
           },
           {
@@ -49,7 +37,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "ac0162825f3d28f5",
@@ -220,14 +208,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d8f4d718639b8495",
+  "active": "664f0628a0b9b9b0",
   "lastOpenFiles": [
-    "Course/CS336_LLM_from_scratch/1_Overview_and_tokenization.md",
-    "LLM/knowledge/tokenization/assets/Untitled.png",
+    "LLM/knowledge/tokenization/Tokenization intuition & common types.md",
     "Templates/Note taking guide.md",
     "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md",
+    "Course/CS336_LLM_from_scratch/1_Overview_and_tokenization.md",
+    "LLM/knowledge/tokenization/assets/Untitled.png",
     "LLM/knowledge/tokenization/assets/mermaid-diagram.png",
-    "LLM/knowledge/tokenization/Tokenization intuition & common types.md",
     "Templates/().md",
     "tokenization.md",
     "Course/CS336_LLM_from_scratch/README.md.md",
