@@ -1,6 +1,6 @@
 ---
 created: 2025-08-19T22:45
-updated: 2026-03-11T08:24
+updated: 2026-04-21T21:18
 ---
 * [ref huggingface](https://huggingface.co/learn/llm-course/en/chapter2/4)
 ## Intro
@@ -51,7 +51,7 @@ $$
 	- `UNK`: unknown token(== out-of-vocabulary token/OOV)
 	- `SEP`: separator between sentences
 - Padding side for decoder only structure should be <span style="color:rgb(255, 0, 0)">left</span> $\because$ 
-		![[assets/Untitled.png]]
+		![[Untitled.png]]
 
 ## Common Types 
 -  [Tiktokenizer: nice interactive website](https://tiktokenizer.vercel.app/) to visualize tokenization & splitting

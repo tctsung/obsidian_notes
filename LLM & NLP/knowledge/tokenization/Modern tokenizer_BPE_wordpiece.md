@@ -1,17 +1,16 @@
 ---
 created: 2026-03-07T07:53
-updated: 2026-03-11T08:24
+updated: 2026-04-21T21:18
 ---
 ## Intro
 - details of most widely used tokenization algorithms: BPE & wordpiece
 - automatically determine vocab by raw text frequency
-- 
 ## BPE (byte-pair encoding)
 - intuition: build tokenizer by repeatedly **merging the most frequent adjacent token pair** as a new token
 - ref
 	- [CS336](https://youtu.be/SQ3fZ1sAqXI?si=jVWDR75FAGxntr-g&t=4323), [youtube](https://youtu.be/tOMjTCO0htA?si=Y30VGw6WKMR8-2K8)
 
-![[assets/mermaid-diagram.png]]
+![[mermaid-diagram.png]]
 #### Example
 - **training**
 	- merge rules are generated & thus <span style="color:rgb(255, 0, 0)">frequency-ordered</span>

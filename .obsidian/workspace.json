@@ -1,24 +1,47 @@
 {
   "main": {
-    "id": "1824f011c3558668",
+    "id": "57e77a32b13220ec",
     "type": "split",
     "children": [
       {
-        "id": "82ad1b7dfebf0428",
+        "id": "ac0162825f3d28f5",
         "type": "tabs",
+        "dimension": 82.66998341625207,
         "children": [
           {
-            "id": "176bafbdb6f04006",
+            "id": "3d67498d98ff591d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/framework/LangGraph/Tool calling.md",
+                "file": "DL & ML/knowledge/Numeric dtypes & memory usage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tool calling"
+              "title": "Numeric dtypes & memory usage"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f31169f0b8427b67",
+        "type": "tabs",
+        "dimension": 17.330016583747927,
+        "children": [
+          {
+            "id": "f73268e9be7f05f2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DL & ML/knowledge/Numeric dtypes & memory usage.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Numeric dtypes & memory usage 的大綱"
             }
           }
         ]
@@ -27,15 +50,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0b149ea235b30c96",
+    "id": "fce1172adbe3cc2f",
     "type": "split",
     "children": [
       {
-        "id": "6104c6040cd27e57",
+        "id": "69df936344bcd49e",
         "type": "tabs",
         "children": [
           {
-            "id": "b97d8df1df5cc797",
+            "id": "99b27526442e6ac7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,11 +67,11 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "檔案瀏覽器"
             }
           },
           {
-            "id": "ca1ef38099d5443c",
+            "id": "8c192f44053fcb27",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,11 +84,11 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜尋"
             }
           },
           {
-            "id": "692abb400514c843",
+            "id": "772af17d9d92bcd2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,18 +101,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 285.5
   },
   "right": {
-    "id": "820f5bd272c28034",
+    "id": "bbc155bf1d4d12de",
     "type": "split",
     "children": [
       {
-        "id": "e726da9ae814c743",
+        "id": "b776e5858750d3f6",
         "type": "tabs",
         "children": [
           {
-            "id": "5919f80d118730d7",
+            "id": "3aa3450186f0280e",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -107,20 +130,21 @@
             }
           },
           {
-            "id": "5e35aa271e8c432d",
+            "id": "baaf561f029d753b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "LLM/tools/Langraph/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Basics"
             }
           },
           {
-            "id": "a5e066a6dd07b97d",
+            "id": "7f2e38d986ed2b83",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,20 +159,22 @@
             }
           },
           {
-            "id": "aa82959df7d7313b",
+            "id": "8362768c3be35dcb",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "LLM/tools/Langraph/Basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Basics"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -157,18 +183,64 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:開啟快速切換": false,
+      "graph:查看關聯圖": false,
+      "canvas:建立新畫布": false,
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false,
+      "bases:建立新的 base": false,
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "176bafbdb6f04006",
+  "active": "3d67498d98ff591d",
   "lastOpenFiles": [
-    "LLM/framework/LangGraph/ReAct Agent.md"
+    "LLM & NLP/knowledge/ToolCalling Mental Model.md",
+    "projects/free lunch ai Agent Framework.md",
+    "Programming/python/UV (create library).md",
+    "Programming/python",
+    "Programming",
+    "LLM/knowledge/tokenization/assets/Untitled.png",
+    "LLM/knowledge/tokenization/assets/mermaid-diagram.png",
+    "LLM/framework/LangGraph/assets/Pasted image 20250901233334.png",
+    "LLM/framework/LangGraph/assets/Pasted image 20250901233029.png",
+    "LLM/framework/LangGraph/assets/Pasted image 20250901232319.png",
+    "LLM/framework/LangGraph/assets/Pasted image 20250810160757.png",
+    "LLM/framework/LangGraph/assets/image.png",
+    "LLM/framework/LangGraph/assets/image 6.png",
+    "LLM/framework/LangGraph/assets/image 5.png",
+    "LLM/framework/LangGraph/assets/image 4.png",
+    "LLM/knowledge/tokenization/Tokenization intuition & common types.md",
+    "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md",
+    "LLM/knowledge/tokenization/assets",
+    "LLM/knowledge/prompt/ReAct Knowledge.md",
+    "LLM/framework/LangGraph/未命名.md",
+    "LLM/framework/LangGraph/Tool calling.md",
+    "LLM/framework/LangGraph/ReAct Agent.md",
+    "LLM/framework/LangGraph/Node State & Edge.md",
+    "LLM/framework/LangGraph/LangChain Messages.md",
+    "LLM/framework/LangGraph/assets",
+    "LLM/knowledge/ToolCalling Mental Model.md",
+    "LLM/knowledge/tokenization",
+    "LLM/knowledge/prompt",
+    "LLM/knowledge/Agent.md",
+    "LLM/framework/Llama-Factory.md",
+    "LLM/framework/LangGraph",
+    "LLM/knowledge",
+    "LLM/framework",
+    "LLM",
+    "projects/SusCheck一眼望穿.md",
+    "DL & ML/knowledge/Numeric dtypes & memory usage.md",
+    "LLM & NLP/framework/Llama-Factory.md",
+    "Course/CS336_LLM_from_scratch/2_Pytorch_and_resource_accounting.md",
+    "Course/CS336_LLM_from_scratch/1_Overview_and_tokenization.md",
+    "LLM & NLP/knowledge/tokenization/Modern tokenizer_BPE_wordpiece.md",
+    "Course/CS336_LLM_from_scratch/README.md.md",
+    "LLM & NLP/knowledge/tokenization/Tokenization intuition & common types.md",
+    "Templates/Note taking guide.md",
+    "Templates/().md",
+    "tokenization.md",
+    "LLM & NLP/framework/LangGraph/Tool calling.md",
+    "Untitled.canvas"
   ]
 }
