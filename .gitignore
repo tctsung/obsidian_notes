@@ -1,1 +1,16 @@
-*.DS_Store*
+# OS-specific junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian per-device workspace/view state
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Plugin-local cache/state that churns across devices
+.obsidian/plugins/update-time-on-edit/data.json
+
+# Local trash if Obsidian is configured to use it
+.trash/
