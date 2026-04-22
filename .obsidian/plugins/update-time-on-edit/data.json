@@ -18,18 +18,29 @@
     "LLM/framework/LangGraph/ReACT.md": "dde8355a3daf6d55d8baad13e48f468be81dacd43804ebffe36cd9676a780a7e",
     "LLM/framework/LangGraph/Node State & Edge.md": "2357cbd65aab0128b53954f6a350c61f1b2c3983406b76ffc1fab8c411c94402",
     "GEMINI.md": "e69d1d003de8de52885af13e7569d3c85d39a328bd234db6b52b8afe636b9a2e",
+<<<<<<< HEAD
     "LLM/framework/Llama-Factory.md": "36d1598c4788f1b2d2f77ab457cc1e0cd835a23493399802a34e9e8b780e3820",
     "LLM/framework/LangGraph/Tool calling.md": "e7baea56fe679a7ada8afac1c3fe5fe4def7a97f8c68068bbd5ea18fc21c71e4",
+=======
+    "LLM/framework/Llama-Factory.md": "36c5cf6760029e918a5188a9215aa82ac257501584e9f8c864a7db0c51a7ffca",
+    "LLM/framework/LangGraph/Tool calling.md": "546d6f54a71102305d1e529c1dc13be5af3bc7f33f12c5a059aba1f9ea96cef3",
+>>>>>>> 9decafc (add freelunch note, add toolcall mental model)
     "Database/Neo4j-Cypher.md": "a744b568c984afd35e861bf1f82c0f33e123a8e02a3f94478850efd83b8754cd",
     "projects/Lyric Chat.md": "f3121c3a48a0df8d33fbd0a4f8beb5320b82b8468c76f55a56cfbd3b19b30e94",
     "LLM/framework/LangGraph/ReAct Agent.md": "078b0d483421e6ffa2503f4e5398c4809882999d3f12f72d9b35124efb5608db",
     "README.md": "fe5d8a4b4deb8d3f524c8822183bfd8195ddb3372f6a7695f3b545ecfe11106c",
     "projects/Finetune customized model.md": "4c1021030cfdf95e7e99e30e95f3bb812ae4bac4add3f8e7566b8dafb4fc3342",
+<<<<<<< HEAD
     "projects/Own Agent Framework.md": "1a328a82a4a782726011a52d3aee0746761716e286b5f1c819e8bd06e4920dc1",
     "Course/CS336_LLM_from_scratch/README.md.md": "baeafa9823424c829c1af25f3516360019e0aa6da46aeb71df4103fdbfee5c7a",
     "Course/CS336_LLM_from_scratch/1_Overview_and_tokenization.md": "28862f38003dc236c2716ff541b78a3dd20473406d921e95a4fe3878417ba47c",
     "LLM/knowledge/tokenization/Tokenization intuition & common types.md": "a1ab08cbafd176abffbfa9dbf362b526ac5c6dfbe4a74dca6b5063c4a9ce909c",
     "Templates/Note taking guide.md": "51d844154c886734757f89f5f24e68c0cc3697c182d46aa355228837ca9222c4",
     "LLM/knowledge/tokenization/Modern tokenizer (BPE & wordpiece).md": "5f7d0fd5ced5123770eba1060c4114403d0216591c77e5ed1534b46368921768"
+=======
+    "LLM/knowledge/ToolCalling Mental Model.md": "b646ea49a0713ee04be97c19f2a11c56a03983b7531615cf3493add5feb007c2",
+    "projects/free lunch ai Agent Framework.md": "a2476e83c8f26c73010f46dfb958e405a093be30c9179de7827c953e0ae94a11",
+    "Programming/python/UV (create library).md": "00667e946b3f4b6fccd5016a6b512055d224cf96ca404143a53f7ad6ad80f965"
+>>>>>>> 9decafc (add freelunch note, add toolcall mental model)
   }
 }

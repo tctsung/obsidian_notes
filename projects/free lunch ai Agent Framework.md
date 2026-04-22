@@ -1,6 +1,6 @@
 ---
 created: 2025-12-17T23:40
-updated: 2025-12-18T00:10
+updated: 2025-12-28T14:11
 ---
 
 
@@ -13,6 +13,7 @@ updated: 2025-12-18T00:10
 ### Goal
 - turn into a python package that I will use everyday for my projects (the PCT project, RoleLLM)
 - hand-write the commonly used functions (eg. bind_tool, RAG, react, structured output, stream)
+	- use `httpx` to have a lightweight version (??? might not worth it???)
 - have langgraph version of things (for agent integration)
 ### Demo usecase
 - dependencies
@@ -36,12 +37,14 @@ bot.invoke("what's good!")
 # > return: str
 
 # interface for langgraph agent workflow
-model = free.llm(model="<provider>_<model id>")
+model = free.langchain_llm(model="<provider>:<model id>")
 model.invoke([SystemMessage("..."), HumanMessage("...")])
+agent = lang
+
 
 # self-written practice of an agent
 free.agent(
-	model="<provider>_<model id>", 
+	model="<provider>:<model id>",  # or model name only
 	tools=[func1, func2],
 	structured_output = dataclasses/typeddict/pydantic
 	)
