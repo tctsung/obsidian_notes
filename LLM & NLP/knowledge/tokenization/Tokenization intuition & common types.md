@@ -1,6 +1,6 @@
 ---
 created: 2025-08-19T22:45
-updated: 2026-04-21T21:18
+updated: 2026-05-08T23:32
 ---
 * [ref huggingface](https://huggingface.co/learn/llm-course/en/chapter2/4)
 ## Intro
@@ -15,7 +15,7 @@ $$
 \text{Raw Text}  
 \xrightarrow{\text{Tokenizer}}  
 \text{Token IDs}  
-\xrightarrow{\text{Embedding layer or model}}  
+\xrightarrow{\text{Embedding layer/model}}  
 \text{Vector Embeddings}  
 $$
 Eg.
@@ -32,16 +32,18 @@ $$
 $$
 
 ### terms
-* **token**: <span style="color:rgb(255, 0, 0)">basic unit</span> used to convert text into numbers for an LM
-		* each token is probability distribution representation of unicode strings (in int format)
-		* eg. `some_word_indices = [15496, 11, 995, 0]`
+* **token**: <span style="color:rgb(255, 0, 0)">basic unit</span> used to convert text into numbers (unicode strings in int format) for an LM
+	* LM place probability distribution over seq of tokens
+	* eg. `some_word_indices = [15496, 11, 995, 0]`
 * **encode**: turn strings to tokens
 * **decode**: turn tokens back to strings
 * tokenizer: a class that implements encode & decode methods
 * <span style="color:rgb(255, 0, 0)">vocabulary size</span>: # of unique tokens the tokenizer can recognize
 	* nrow of the vocabulary table (unique count of what ONE index can be)
 	* eg. `<pad>`, `10`, `1032` -> each is a vocabulary
-* <span style="color:rgb(255, 0, 0)">Embedding Dimension</span>-- length of token that represent one word (always the same for same tokenizer)
+* <span style="color:rgb(255, 0, 0)">Embedding Dimension</span>: 
+	* def: length of **float-dtype vector** that represent semantic meaning of one word
+	* always same len for same tokenizer
 * corpus-- massive input text data used for training tokenizer
 * commonly seen special token (serve special purpose, have same embedding dim)
 	* `BOS`: beginning of sequence
@@ -58,7 +60,9 @@ $$
 - [sentencepiece library: most common tokenization algorithms](https://github.com/google/sentencepiece)
 - **compression ratio = $\frac{\text{total bytes of original text}}{\text{total no. of tokens generated}}$**
 	- def: measure of how efficiently tokenizer pack raw text into tokens
-	- why use "byte" as  unit: finest basic unit, & modern tokenizers start w byte (eg. BPE, wordpiece)
+	- why use "byte" as  unit: 
+		- finest basic unit (can process any unknown character)
+		- modern tokenizers start w byte (eg. BPE)
 	- higher ratio:
 		- compress text into **denser, more meaningful chunks**
 		- less space: save training computation
@@ -73,6 +77,6 @@ $$
 | vocabulary size   | 256 (0~255)                                                                       | 127758 (inefficient)                                                                                                                                                                          | adapted based on frequency                                                                                                                                | almost unbounded                                                                                                                         |
 | compression ratio | 1                                                                                 | 1.5                                                                                                                                                                                           | 1.5~4                                                                                                                                                     | 4                                                                                                                                        |
 | pros              | - less sparsity<br>- small vocabulary size<br>- elegant, read by machine directly | - less unknown token (OOV)<br>- can recognize misspelled word<br>- good for ideogram-based language (中文)                                                                                      | - based on corpus statistics<br>- can recognize misspelled word (worst case: split to char-based)<br>- nice balance of vocabulary size & token meaing<br> | - easy setup                                                                                                                             |
-| cons              | - long sequence (bad for self-attention)<br>- low compression ratio               | - roman-based language loose a lot of info when break-down to chr)<br>- many characters are rare, but we use a token to represent each of them (inefficient)<br>- vocabulary size quite large | extra training                                                                                                                                            | - huge vocabulary size<br>- unknown token (not seen in training corpus)<br>- need to train every word, even similar ones (eg. dog, dogs) |
+| cons              | - long sequence (bad for self-attention)<br>- low compression ratio               | - roman-based language loose a lot of info when break-down to chr)<br>- many characters are rare, but we use a token to represent each of them (inefficient)<br>- vocabulary size quite large | extra training with descriptive stats (because voc. size is not fixed, unlike byte-based or other types)                                                  | - huge vocabulary size<br>- unknown token (not seen in training corpus)<br>- need to train every word, even similar ones (eg. dog, dogs) |
 
 

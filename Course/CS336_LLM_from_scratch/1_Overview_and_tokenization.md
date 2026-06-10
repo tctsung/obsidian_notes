@@ -1,6 +1,6 @@
 ---
 created: 2026-03-07T08:23
-updated: 2026-04-21T21:18
+updated: 2026-05-09T00:31
 ---
 
 
@@ -26,10 +26,5 @@ updated: 2026-04-21T21:18
 - basis knowledge in this note: [[Tokenization intuition & common types]] 
 
 ### Byte-Pair Encoding (BPE)
-- still being used
-- other tokenizer technique: from HF
-
-
-
-
-Continue: https://youtu.be/SQ3fZ1sAqXI?si=M-JYjFPmtgAJFqtZ&t=3636
+- still being used, most modern methods
+- details: [[Modern tokenizer_BPE_wordpiece]]
