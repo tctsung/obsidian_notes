@@ -1,6 +1,6 @@
 ---
 created: 2025-08-19T22:45
-updated: 2026-05-08T23:32
+updated: 2026-06-11T22:20
 ---
 * [ref huggingface](https://huggingface.co/learn/llm-course/en/chapter2/4)
 ## Intro
@@ -42,7 +42,7 @@ $$
 	* nrow of the vocabulary table (unique count of what ONE index can be)
 	* eg. `<pad>`, `10`, `1032` -> each is a vocabulary
 * <span style="color:rgb(255, 0, 0)">Embedding Dimension</span>: 
-	* def: length of **float-dtype vector** that represent semantic meaning of one word
+	* def: length of **float-dtype vector** that represent semantic meaning of one token
 	* always same len for same tokenizer
 * corpus-- massive input text data used for training tokenizer
 * commonly seen special token (serve special purpose, have same embedding dim)
