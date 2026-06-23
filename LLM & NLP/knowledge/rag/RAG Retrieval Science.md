@@ -1,6 +1,6 @@
 ---
 created: 2026-06-12T00:55
-updated: 2026-06-12T01:06
+updated: 2026-06-14T14:52
 ---
 ## Procedure
 
@@ -97,7 +97,7 @@ $$\text{cosine}(\vec{q}, \vec{d}) = \frac{\vec{q} \cdot \vec{d}}{\|\vec{q}\| \|\
 
 Most common: **Reciprocal Rank Fusion (RRF)** — rank-based, parameter-free:
 
-$$\text{RRF\_score}(d) = \frac{1}{k + \text{rank}_{\text{dense}}(d)} + \frac{1}{k + \text{rank}_{\text{sparse}}(d)}, \quad k = 60$$
+$$\text{RRF score}(d) = \frac{1}{k + \text{rank}_{\text{dense}}(d)} + \frac{1}{k + \text{rank}_{\text{sparse}}(d)}, \quad k = 60$$
 
 where $d$ is a candidate document, $\text{rank}_{\text{dense}}(d)$ is its position in the dense retriever's ranked list, $\text{rank}_{\text{sparse}}(d)$ in the sparse list. Docs appearing in both top-k get boosted. No score calibration needed — just ranks.
 
