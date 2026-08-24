@@ -1,6 +1,6 @@
 ---
 created: 2026-07-27T09:37
-updated: 2026-07-27T09:39
+updated: 2026-07-27T22:05
 ---
 
 ## Big picture
@@ -70,7 +70,9 @@ w                 ← LEAF (grad_fn = None) — nothing created it
 ```
 - **`requires_grad=True`** → tensor becomes a <span style="color:rgb(255, 0, 0)">leaf</span> that tracks all ops done on it
 	- leaf has `grad_fn=None`
-- grads **accumulate** → must `.grad.zero_()` each step (matches the fan-in "sum" behavior)
+- grads **accumulate** → must `.grad.zero_()` each step
+	- avoid accumulate gradient of one mini-batch to another
+	- matches the fan-in "sum" behavior
 - graph is rebuilt **fresh every iteration** (define-by-run) → can put `if`/loops in different iterations, forward & autograd just follows the code at run-time
 - loss must be a **scalar** → that's why loss lines end in `.mean()` / `.sum()`
 ### Ex 1. Toy
@@ -106,12 +108,12 @@ y = 3 * x + 2 + 0.1 * torch.randn_like(x)       # noisy true line (target)
 w = torch.zeros(1, 1, requires_grad=True)       # param: slope
 b = torch.zeros(1, requires_grad=True)          # param: intercept
 lr = 0.1                                        # step size
-model = lambda x: x @ w + b           # forward: w fans out over all 100 rows
+forward = lambda x: x @ w + b           # forward: w fans out over all 100 rows
 loss_fn = lambda pred, y: ((pred - y) ** 2).mean()  # mean = sum rule over batch
 
 for step in range(200):
-    pred = model(x)                              # forward (builds graph)
-    loss = loss_fn(pred, y)                      # turn 100 errors -> 1 scalar
+    y_pred = forward(x)                     # forward (builds graph)
+    loss = loss_fn(y_pred, y)               # turn 100 errors -> 1 scalar
     loss.backward()                              # backprop: calc grad for leaf
     with torch.no_grad():
         w -= lr * w.grad                         # gradient descent
@@ -120,3 +122,4 @@ for step in range(200):
 # > converge to w≈3, b≈2   
 ```
 
+### Ex 3. Another linear regression
