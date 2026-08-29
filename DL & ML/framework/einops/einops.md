@@ -1,9 +1,9 @@
 ---
 created: 2026-06-23T09:46
-updated: 2026-08-23T23:49
+updated: 2026-08-28T22:38
 ---
 ## Pre-read
-- learn stride of [[Tensor Basics]] to understand order of axes
+- learn stride of [[0_Tensor Core Mental Model]] to understand order of axes
 ### einsum
 - def: <span style="color:rgb(255, 0, 0)">multiply</span> tensors by connecting axes with the same name, then <span style="color:rgb(255, 0, 0)">sum over</span> connected axes omitted from the output
 - **inspiration for einops**: using explicit axis names makes tensor operations easier to read instead of memorizing dimension positions

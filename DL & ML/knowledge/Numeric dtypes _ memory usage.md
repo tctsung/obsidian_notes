@@ -1,6 +1,6 @@
 ---
 created: 2026-03-12T08:16
-updated: 2026-05-10T23:46
+updated: 2026-08-28T22:21
 ---
 
 ### IEEE 754 Standard
@@ -65,15 +65,18 @@ gantt
     Int(8) :active, 0, 8
 ```
 
-| Dtype    | Use Case                               | Pros                          | Cons                                                                                                                                              |
-| -------- | -------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| FP32     | Default training (single precision)    | most stable                   | 2× memory vs FP16, slow                                                                                                                           |
-| BF16     | Large model training                   | Same range as FP32, 2× faster | Much less precision (7 vs 23 M bi                                                                                                                 |
-| FP16     | Mixed-precision training, inference    | Better resolution than BF16   | Smaller range → overflow/underflow                                                                                                                |
-| FP8 E4M3 | Forward pass, inference (H100+)        | 4× smaller than FP32          | Very low resol                                                                                                                                    |
-| FP8 E5M2 | Backward pass / gradients (H100+)      | More range than E4M3          | Minimal reso                                                                                                                                      |
-| FP4      | Inference quantization (Nvidia- nvfp4) | 8× smaller than FP32     <br>* only have these repr: -6, ..., -0.5, 0.0, 0.5, 1.0, 1.5, 2, 3, 4, 6<br>* can add **a sep scale factor** can represent more than these vals <br>->  |
-| INT8     | Post-training inference quantization   | Fast integer math, 4× smaller | No decimals, requires cal                                                                                                                         |
+
+
+| Dtype    | Use Case                               | Pros                                                                                             | Cons                                                                | PyTorch                                  |
+| -------- | -------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------- |
+| FP32     | Default training (single precision)    | most                                                                                             | 2× memory vs FP16, slow                                             | `torch.float32` / `.float()`             |
+| BF16     | Large model training                   | Same range as FP32,                                                                              | Much less precision (7 vs 23 M bi                                   | `torch.bfloat16` / `.bfloat16()`         |
+| FP16     | Mixed-precision training, inference    | Better resoluti                                                                                  | Smaller range → overflow/underflow                                  | `torch.float16` / `.half()`              |
+| FP8 E4M3 | Forward pass, inference (H100+)        | 4× sm                                                                                            | Very low resol                                                      | `torch.float8_e4m3fn`                    |
+| FP8 E5M2 | Backward pass / gradients (H100+)      | Mo                                                                                               | Minimal reso                                                        | `torch.float8_e5m2`                      |
+| FP4      | Inference quantizat 1. 8× smaller than FP32     <br><br>2. can add **a sep scale factor** to represent more vals  e vals  e vals  e vals  | only have these repr: -6, ..., -0.5, 0.0, 0.5, 1.0, 1.5, 2, 3, 4, 6 | backend/version dependent                |
+| INT8     | Post-training inference quantization   | Fast                                                                                             | No decimals, requires cal                                           | `torch.int8` / `.to(torch.int8)`         |
+| INT64    | Labels, token IDs, indexing            | large                                                                                            | large memory                                                        | `torch.int64` / `torch.long` / `.long()` |
 ### Demo smaller bits issue
 - floating-point arithmetic in GPU exhibits **non-associativity**
 	- why? Mantissa cannot have infinite bits (especially BF16)

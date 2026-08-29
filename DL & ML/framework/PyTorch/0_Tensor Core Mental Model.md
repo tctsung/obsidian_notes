@@ -1,9 +1,13 @@
 ---
 created: 2026-08-23T23:29
-updated: 2026-08-23T23:33
+updated: 2026-08-28T22:41
 ---
-## tensor 
-- goal: to store the input data & weights and bias of NNET
+- Next: [[1_Create and Gradient]]
+## Intro to PyTorch
+- def: ML framework with 
+	- tensor computation on GPU & 
+	- auto-differentiation (easy calc for NNET)
+-  use `tensor` (main data structure of PyTorch) to store the input data & weights and bias of NNET
 ### core concept
 - def: <span style="color:rgb(255, 0, 0)">pointers</span> to some allocated memory <span style="color:rgb(255, 0, 0)">+ metadata</span> to get values & do operations
 - metadata includes:
@@ -35,6 +39,7 @@ x[1,2] # 1*3 + 2*1 = 5 → physical_memory position 5
 y = torch.tensor([[[0., 1.], [2, 3]], [[4., 5.], [6., 7.]]])
 y.stride()  # (4, 2, 1)
 ```
+
 
 ### tensor operations
 - two main types
