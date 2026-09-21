@@ -1,6 +1,6 @@
 ---
 created: 2026-07-27T09:37
-updated: 2026-07-27T22:05
+updated: 2026-09-03T09:53
 ---
 
 ## Big picture
@@ -121,5 +121,3 @@ for step in range(200):
         w.grad.zero_(); b.grad.zero_()           # reset grads
 # > converge to w≈3, b≈2   
 ```
-
-### Ex 3. Another linear regression

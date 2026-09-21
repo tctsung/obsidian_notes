@@ -1,6 +1,6 @@
 ---
 created: 2026-08-23T16:44
-updated: 2026-08-28T22:40
+updated: 2026-09-03T11:42
 ---
 
 
@@ -50,36 +50,14 @@ x = x.to(torch.float16)
 x = x.to(torch.long)
 ```
 
-- **cpu ↔ gpu**
-```python
-x = x.to("cuda")
-x = x.to('cuda:0')  # specify if multiple gpu exist
-x = x.to("cpu")
-
-# Apple Silicon: unified mem so generally dont' need transfer
-x = x.to("mps")  
-
-# copy=True forces a new tensor
-x = x.to("cuda", 
-		 dtype=torch.float16,
-         copy=False
-		)
-
-# Example script
-if torch.cuda.is_available():
-    device = torch.device("cuda")
-    # method 1. create at GPU
-    x = torch.ones(5, device=device)
-    # method 2. create 1st then move to GPU
-    y = y.to(device)
-```
-
 ### Basic Calculation
 
 > For matrix multiplication and complex operations, see [[einops]] for more intuitive notation.
 
+- Element-Wise
+
 ```python
-x = torch.tensor([3]) ; y = torch.tensor([6])
+x = torch.tensor([3, 1]) ; y = torch.tensor([6,0])
 x + y                         # add
 x - y                         # subtract
 x * y                         # element-wise multiply
@@ -93,17 +71,28 @@ x.exp()                       # eˣ
 x.log()                       # ln(x)
 x.abs()                       # |x|
 
-x.sum()                       # sum
-x.mean()                      # mean
-x.max()                       # max
-x.min()                       # min
-
 ## in-place calculation
 y.add_(x) # y = y + x
 y.sub_(x)
 y.mul_(x)
 y.div_(x) # y = y / x
 ```
+- Reduction Operations (Dimensions collapse)
+	- `dim=k`: <span style="color:rgb(255, 0, 0)">removes axis k from the output shape</span>.
+```python
+x = torch.tensor([[3.0, 1.0], [6.0,0.0], [2.0,0.0]]) 
+# collapse all dim into single scalar
+x.sum()            # 3+1+6+2           
+x.mean()                      
+x.max()                       
+x.min()     
+
+# collapse
+x.mean(dim=1)       # Collapses dim 1 (columns) -> 2,3,1
+x.max(dim=0)        # [6,1],[1,0]  -> returns (values, indices) 
+x.min(dim=-1)       # [1,0,0],[1,1,1]  -> returns (values, indices)           
+```
+
 
 - Common Matrix operation
 ```python
@@ -122,18 +111,4 @@ torch.matmul(x, y)
 x[2,:] # single dim
 x[1,1] # still a tensor
 x[1,1].item() # get the actual ele
-```
-
-
-### Gradient
-
-```python
-# track gradients
-x = torch.ones(5, requires_grad=True) 
-y = (x ** 2).sum()
-y.backward()
-x.grad              # ∂y / ∂x
-
-# stop gradient tracking
-x = x.detach() 
 ```

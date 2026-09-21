@@ -1,6 +1,6 @@
 ---
 created: 2026-06-23T09:46
-updated: 2026-08-28T22:38
+updated: 2026-08-28T22:59
 ---
 ## Pre-read
 - learn stride of [[0_Tensor Core Mental Model]] to understand order of axes
@@ -177,14 +177,11 @@ rearrange(x, "b r c -> r (b c)") # 3, 2
 
 rearrange(ims, "b h w c -> h (b w) c")  # b slow -> full image, then next image
 # > [e][i][n][o][p][s]   side by side
-```
-![[Pasted image 20260602213944.png|561]]
 
-```python
 rearrange(ims, "b h w c -> h (w b) c")  # b fast -> width look overlapping 
 # > 6X wider ghosted image
 ```
-![[Pasted image 20260602213901.png|515]]
+
 - decompose then recompose: 
 ```python
 # ims = 6 images "e", "i", "n", "o", "p", "s"

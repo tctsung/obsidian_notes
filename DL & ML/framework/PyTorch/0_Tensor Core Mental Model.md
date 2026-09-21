@@ -1,8 +1,8 @@
 ---
 created: 2026-08-23T23:29
-updated: 2026-08-28T22:41
+updated: 2026-09-03T10:14
 ---
-- Next: [[1_Create and Gradient]]
+- Next: [[1_Create]]
 ## Intro to PyTorch
 - def: ML framework with 
 	- tensor computation on GPU & 
