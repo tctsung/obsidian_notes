@@ -1,6 +1,6 @@
 ---
 created: 2026-06-23T09:46
-updated: 2026-08-28T22:59
+updated: 2026-09-29T20:38
 ---
 ## Pre-read
 - learn stride of [[0_Tensor Core Mental Model]] to understand order of axes
@@ -15,19 +15,19 @@ updated: 2026-08-28T22:59
 	output name → keep axis
 #### 3 examples
 
-##### dot product
+**dot product**
 Pair-wise multiply along `i`, then sum it.
 ```python
 einsum(a, b, "i, i ->")
 ```
 
-##### matrix multiplication
+**matrix multiplication**
 Connect `k`, multiply along it, then sum; keep `i, j`.
 ```python
 einsum(A, B, "i k, k j -> i j")
 ```
 
-##### attention-style dot products
+**attention-style dot products**
 
 Connect `d` to compute the dot product between every query and key.
 ```python
