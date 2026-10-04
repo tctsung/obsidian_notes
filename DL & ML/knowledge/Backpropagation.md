@@ -1,6 +1,6 @@
 ---
 created: 2026-07-27T09:37
-updated: 2026-09-03T09:53
+updated: 2026-10-03T20:38
 ---
 
 ## Big picture
@@ -23,7 +23,7 @@ updated: 2026-09-03T09:53
 	- `lr` (learning rate) = $\eta$ = step size
 	- near the valley the slope → 0, so steps shrink & it naturally settles
 $$\theta \leftarrow \theta - \eta \cdot \frac{\partial L}{\partial \theta}$$
-- see [[DL Training basics]] for epoch / batch / iteration (we run descent once per **batch**)
+- see [[Epoch_Batch]] for epoch / batch / iteration (we run descent once per **batch**)
 
 ---
 ## 2. Chain rule

@@ -14,3 +14,6 @@ desktop.ini
 
 # Local trash if Obsidian is configured to use it
 .trash/
+
+# Sensitive notes (credentials, account IDs, hostnames). Never commit.
+_private/

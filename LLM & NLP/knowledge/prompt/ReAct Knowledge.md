@@ -1,6 +1,6 @@
 ---
 created: 2025-09-01T19:38
-updated: 2026-04-21T21:18
+updated: 2026-10-03T19:42
 ---
 
 
@@ -14,7 +14,7 @@ updated: 2026-04-21T21:18
 - benchmarks
 	- HotPot QA: multi-step Q&A
 	- Fever: fact verification
-- code application note: [[LLM/framework/LangGraph/ReACT|ReACT]]
+- code application note: [[ReAct Agent|ReACT]]
 ### pipeline
 
 > **Question → thought → action → observation**

@@ -1,6 +1,6 @@
 ---
 created: 2026-06-23T09:46
-updated: 2026-09-29T20:38
+updated: 2026-10-03T20:38
 ---
 ## Pre-read
 - learn stride of [[0_Tensor Core Mental Model]] to understand order of axes
@@ -65,7 +65,7 @@ rearrange(img1, "h w c -> w h c") # height width channel/color
 ```
 #### merge
 - merge adjacent dimension into 1
-- **dim=0 represent batch**, check [[Training Basics#Training Loop Terminology]] for why
+- **dim=0 represent batch**, check [[Epoch_Batch#Training Loop Terminology]] for why
 - length of newly composed axis is a product of components
 	- eg. `"2 (3 5) -> 2 15"`
 ```python
