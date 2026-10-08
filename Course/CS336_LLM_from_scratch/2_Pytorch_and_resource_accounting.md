@@ -1,6 +1,6 @@
 ---
 created: 2026-03-12T06:24
-updated: 2026-09-29T22:47
+updated: 2026-10-07T23:51
 ---
 ### Data types
 - almost everything are stored as float (weights, bias, )
@@ -66,3 +66,25 @@ z = einsum(
 )
 # > dot product over hidden
 ```
+
+## FLOPs (<span style="color:rgb(255, 0, 0)">flo</span>ating-point <span style="color:rgb(255, 0, 0)">op</span>eration)
+- def: <span style="color:rgb(255, 0, 0)">num of basic operations</span> (`+-*/`) <span style="color:rgb(255, 0, 0)">needed to train DL model</span>
+	- for hardware optimization, `+` and `*` have similar efficiency 
+- FLOP/s: floating-point operations per second (also written as FLOPS sometimes)
+	- for hardware measurement (**dtype** matters a lot!)
+	- need to **divided by 2** IF it's a peak performance **with sparsity**
+		- eg. H100: 1979 teraFLOP/s $\rightarrow$ `h100_flop_per_sec = 1979e12/2`
+- common operations
+	- mostly won't encounter operation more expensive than matmul
+	- forward pass FLOPs: exact for linear layer, good approx. for transformers
+
+| operation                                | big O                                                                  | FLOPs                                                                                                            |
+| ---------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| element wise <br>($m \times n$)          | O(m n) $\propto$ <span style="color:rgb(255, 0, 0)">matrix size</span> | $mn$ (× ops per element, eg. add = 1)                                                                            |
+| matmul <br>($B \times D$ @ $D \times K$) | O(B D K)                                                               | $2 \times B \times D \times K$<br>(each $BK$ outputs needs $D$ multiplies + $D$ adds)                            |
+| forward pass                             | O(B D K)                                                               | $2 \times B \times (D \times K)$<br>- $B$ = num data points = num tokens for LLMs<br>- $D \times K$ = num params |
+
+# MFU (time calculation to wall-clock time)
+- GPU ops are async -> need `torch.cuda.synchronize()` before timing: [[Asynchronous programming#PyTorch GPU timing]]
+
+
