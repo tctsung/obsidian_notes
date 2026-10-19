@@ -1,6 +1,6 @@
 ---
 created: 2026-08-28T22:39
-updated: 2026-09-20T21:55
+updated: 2026-10-19T21:37
 ---
 Key mental model: [[0_Tensor Core Mental Model]]
 Before: [[1_Create]]
@@ -180,6 +180,8 @@ loss_val.item()                 # get CrossEntropy
 ### Optimizer
 
 > def: hold  current state and use **gradient to update all parameters**
+- pass `model.parameters()` for optimizer to track them
+- use fp32 for optimizer state memory for stability (CS336 course 2)
 
 ```python
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)

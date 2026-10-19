@@ -1,6 +1,6 @@
 ---
 created: 2026-10-07T23:50
-updated: 2026-10-08T00:10
+updated: 2026-10-12T21:52
 ---
 ## Introduction
 - def: single-thread concurrency, <span style="color:rgb(255, 0, 0)">switch to other tasks while one waits</span> on I/O
@@ -14,14 +14,14 @@ updated: 2026-10-08T00:10
 	- multiprocessing
 
 ### Key concepts
-| term        | def                                                                       | note                                                                                                                         |
-| ----------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| coroutine   | function defined with `async def`, can **pause in the middle**            | calling it does NOT run it, only creates a coroutine object -> runs when `await`ed or wrapped in a task                       |
-| `await`     | "wait here until the result arrives", let other tasks run meanwhile       | code after `await` runs only once the result is ready; switch only when it <span style="color:rgb(255, 0, 0)">really has to wait</span> (eg. network) |
-| task        | a coroutine handed to the event loop (`create_task`, `gather`)            | multiple tasks = the only source of speedup                                                                                  |
-| event loop  | the scheduler that runs tasks **one at a time**, switching at every wait  | waiting tasks are parked; OS notifies the loop when a response arrives -> task is ready again (no polling, CPU is free)         |
-| concurrency | tasks overlap in time by **taking turns**                                 | async, threads                                                                                                               |
-| parallelism | tasks run **at the same instant** on diff cores                           | multiprocessing, GPU; async = concurrency only                                                                               |
+| term        | def                                                                      | note                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| coroutine   | function defined with `async def`, can **pause in the middle**           | calling it does NOT run it, only creates a coroutine object -> runs when `await`ed or wrapped in a task                                               |
+| `await`     | "wait here until the result arrives", let other tasks run meanwhile      | code after `await` runs only once the result is ready; switch only when it <span style="color:rgb(255, 0, 0)">really has to wait</span> (eg. network) |
+| task        | a coroutine handed to the event loop (`create_task`, `gather`)           | multiple tasks = the only source of speedup                                                                                                           |
+| event loop  | the scheduler that runs tasks **one at a time**, switching at every wait | waiting tasks are parked; OS notifies the loop when a response arrives -> task is ready again (no polling, CPU is free)                               |
+| concurrency | tasks overlap in time by **taking turns**                                | async, threads                                                                                                                                        |
+| parallelism | tasks run **at the same instant** on diff cores                          | multiprocessing, GPU; async = concurrency only                                                                                                        |
 
 - event loop step by step (2 agents, each does `await llm()` then `await search()`)
 ```
@@ -167,7 +167,7 @@ x @ x; torch.cuda.synchronize()               # warmup (1st matmul includes one-
 t = time.perf_counter()
 y = x @ x
 torch.cuda.synchronize()                      # wait for GPU to finish
-print(f"{(time.perf_counter() - t) * 1000:.2f} ms")   # > real compute time (without sync: tiny)
+print(f"{(time.perf_counter() - t) * 1000:.2f} ms")   # > real compute time 
 ```
 - hidden sync points (need value on CPU): `.item()`, `.cpu()`, `print(tensor)` -> avoid `loss.item()` every step
 - Mac (MPS): `torch.mps.synchronize()`

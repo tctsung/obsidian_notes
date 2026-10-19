@@ -1,6 +1,6 @@
 ---
 created: 2026-03-12T08:16
-updated: 2026-08-28T22:21
+updated: 2026-10-13T10:29
 ---
 
 ### IEEE 754 Standard
@@ -88,7 +88,7 @@ gantt
 ****
 
 ### Memory Quick Math
-- 1 byte = 8 bits
+- **1 byte = 8 bits**
 - Memory per parameter: `bits ÷ 8 = bytes`
 - Total model memory: `params × bytes_per_param`
 
