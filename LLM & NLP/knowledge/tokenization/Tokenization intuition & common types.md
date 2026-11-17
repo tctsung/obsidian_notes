@@ -1,6 +1,6 @@
 ---
 created: 2025-08-19T22:45
-updated: 2026-06-11T22:20
+updated: 2026-11-02T17:53
 ---
 * [ref huggingface](https://huggingface.co/learn/llm-course/en/chapter2/4)
 ## Intro
@@ -43,7 +43,7 @@ $$
 	* eg. `<pad>`, `10`, `1032` -> each is a vocabulary
 * <span style="color:rgb(255, 0, 0)">Embedding Dimension</span>: 
 	* def: length of **float-dtype vector** that represent semantic meaning of one token
-	* always same len for same tokenizer
+	* fixed per model (= model width $d$), not per tokenizer: eg. Llama-3 8B & 70B share tokenizer, $d$ = 4096 vs 8192
 * corpus-- massive input text data used for training tokenizer
 * commonly seen special token (serve special purpose, have same embedding dim)
 	* `BOS`: beginning of sequence

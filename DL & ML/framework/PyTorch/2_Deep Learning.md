@@ -1,6 +1,6 @@
 ---
 created: 2026-08-28T22:39
-updated: 2026-10-19T21:37
+updated: 2026-10-21T11:18
 ---
 Key mental model: [[0_Tensor Core Mental Model]]
 Before: [[1_Create]]

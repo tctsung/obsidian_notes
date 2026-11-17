@@ -1,6 +1,6 @@
 ---
 created: 2026-10-07T23:50
-updated: 2026-10-12T21:52
+updated: 2026-10-21T11:18
 ---
 ## Introduction
 - def: single-thread concurrency, <span style="color:rgb(255, 0, 0)">switch to other tasks while one waits</span> on I/O
